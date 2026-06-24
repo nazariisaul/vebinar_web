@@ -1,0 +1,14 @@
+/* Global styles */
+body {
+  font-family: 'Montserrat' sans-serif;
+  background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+ol {
+  list-style-type: none;
+}
