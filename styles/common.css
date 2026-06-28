@@ -1,14 +1,45 @@
 /* Global styles */
 body {
-  font-family: 'Montserrat' sans-serif;
-  background-color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+  color: #111111;
+  background-color: #fafafa;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
 }
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 ul,
 ol {
   list-style-type: none;
+}
+
+address {
+  font-style: normal;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.ingredients-title,
+.made-title,
+.products-title,
+.bestsellerers-title,
+.review-title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  text-align: center;
+}
+.accent-text {
+  color: #fd9222;
 }

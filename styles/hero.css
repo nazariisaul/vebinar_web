@@ -1,7 +1,54 @@
+.section {
+}
+
+.hero {
+  background: rgba(17, 17, 17, 0.4);
+}
+
 .hero-title {
   font-weight: 500;
   font-size: 28px;
-  line-height: 1.21429;
+  line-height: 1.21;
   letter-spacing: -0.03em;
   color: #fff;
+}
+
+.hero-btn {
+  font-weight: 600;
+  color: #fff;
+  border: 1px solid transparent;
+  background-color: transparent;
+}
+
+.hero-btn.accent {
+  background: #fd9222;
+}
+
+.hero-btn.accent:hover,
+.hero-btn.accent:focus {
+  color: #fd9222;
+  background-color: rgba(253, 146, 34, 0.1);
+}
+
+.hero-btn.outlined {
+  border-color: #fff;
+}
+
+.hero-btn.outlined:hover,
+.hero-btn.outlined:focus {
+  color: #fd9222;
+  border-color: #fd9222;
+}
+
+.hero-link {
+  font-weight: 500;
+  color: #fff;
+}
+
+.hero-link:hover,
+.hero-link:focus {
+  color: #fd9222;
+}
+
+.hero-link-item {
 }

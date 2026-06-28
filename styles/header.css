@@ -4,11 +4,9 @@
 /* Logo styles */
 
 .logo {
-  font-style: italic;
   font-weight: 700;
   font-size: 18px;
-  color: #111111;
-  line-height: 1.11111;
+  line-height: 1.11;
   letter-spacing: -0.03em;
   text-transform: uppercase;
 }
@@ -29,11 +27,6 @@
 
 .header-nav-link {
   font-weight: 500;
-  font-size: 14px;
-  color: #111111;
-  line-height: 1.28571;
-  letter-spacing: -0.02em;
-  list-style-type: none;
 }
 
 /* Social links styles */

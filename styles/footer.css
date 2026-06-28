@@ -1,0 +1,62 @@
+.footer {
+  background-color: #1e1823;
+}
+
+.footer-descr {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 1.21;
+  letter-spacing: -0.03em;
+  color: #fff;
+}
+
+.footer-social-title {
+  font-weight: 600;
+  text-align: center;
+  color: #fff;
+}
+
+.social {
+}
+
+.footer-social {
+}
+
+.social-list {
+}
+
+.social-link {
+}
+
+.social-icon {
+}
+
+.address {
+}
+
+.address-title {
+  font-weight: 600;
+  text-align: center;
+  color: #fff;
+}
+
+.footer-address-list {
+}
+
+.footer-address-item {
+}
+
+.address-link {
+  color: #fff;
+}
+
+.footer-nav-list {
+}
+
+.footer-nav-item {
+}
+
+.footer-nav-link {
+  font-weight: 500;
+  color: #fff;
+}

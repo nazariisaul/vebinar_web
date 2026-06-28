@@ -1,0 +1,33 @@
+.benefits {
+  background-color: #1e1823;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.benefits-list {
+}
+
+.benefits-item {
+}
+
+.benefits-caption {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.33;
+  color: #fff;
+}
+
+.benefits-descr {
+  color: rgba(255, 255, 255, 0.7);
+}

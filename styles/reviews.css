@@ -1,0 +1,40 @@
+.review {
+}
+
+.review-title {
+}
+
+.review-list {
+}
+
+.review-item {
+}
+
+.review-ill {
+}
+
+.review-reviewers {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.33;
+  text-align: center;
+}
+
+.review-text {
+  text-align: center;
+  color: rgba(17, 17, 17, 0.7);
+}
+
+.review-btn {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.33333;
+  border: 1px solid #fd9222;
+  background-color: transparent;
+}
+
+.review-btn:hover,
+.review-btn:focus {
+  color: #fff;
+  background-color: #fd9222;
+}
