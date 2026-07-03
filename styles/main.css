@@ -1,4 +1,6 @@
 @import './common.css';
+@import './container.css';
+
 @import './header.css';
 @import './hero.css';
 @import './benefits.css';
