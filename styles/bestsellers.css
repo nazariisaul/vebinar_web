@@ -1,16 +1,32 @@
 .bestsellerers {
+  padding: 60px 0px;
+}
+
+.bestsellers-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 50px;
 }
 
 .bestsellerers-title {
 }
 
 .bestsellerers-list {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 16px;
+  width: 1136px;
 }
 
 .bestsellerers-item {
 }
 
 .bestsellerers-ill {
+  border-radius: 16px 16px 0 0;
 }
 
 .bestsellerers-subtitle {
@@ -19,4 +35,9 @@
   line-height: 1.33333;
   text-transform: uppercase;
   text-align: center;
+  border-bottom: 1px solid rgba(17, 17, 17, 0.1);
+  border-left: 1px solid rgba(17, 17, 17, 0.1);
+  border-right: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 0 0 15px 15px;
+  padding: 28px;
 }

@@ -17,6 +17,18 @@ a {
 ul,
 ol {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
 }
 
 address {
@@ -28,11 +40,21 @@ button {
   cursor: pointer;
 }
 
+.ingredients,
+.made,
+.products,
+.bestsellerers,
+.review {
+  padding: 60px 0;
+}
+
 .ingredients-title,
 .made-title,
 .products-title,
 .bestsellerers-title,
 .review-title {
+  max-width: 412px;
+  margin: 0 auto 50px;
   font-weight: 600;
   font-size: 24px;
   line-height: 1.17;
