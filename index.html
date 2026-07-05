@@ -316,8 +316,8 @@
                 width="230"
                 height="201"
               />
-              <h3 class="products-subtitle">Orange</h3>
-              <p class="products-descr">Dark chocolate</p>
+              <h3 class="products-name">Orange</h3>
+              <p class="products-type">Dark chocolate</p>
               <p class="products-price">45 UAH</p>
             </li>
             <li class="products-item">
@@ -328,8 +328,8 @@
                 width="230"
                 height="201"
               />
-              <h3 class="products-subtitle">Apple & Cranberry</h3>
-              <p class="products-descr">Milk chocolate</p>
+              <h3 class="products-name">Apple & Cranberry</h3>
+              <p class="products-type">Milk chocolate</p>
               <p class="products-price">50 UAH</p>
             </li>
             <li class="products-item">
@@ -340,8 +340,8 @@
                 width="230"
                 height="201"
               />
-              <h3 class="products-subtitle">Lime & Sea Salt</h3>
-              <p class="products-descr">Dark chocolate</p>
+              <h3 class="products-name">Lime & Sea Salt</h3>
+              <p class="products-type">Dark chocolate</p>
               <p class="products-price">66 UAH</p>
             </li>
             <li class="products-item">
@@ -352,8 +352,8 @@
                 width="230"
                 height="201"
               />
-              <h3 class="products-subtitle">Pineapple</h3>
-              <p class="products-descr">Dark chocolate</p>
+              <h3 class="products-name">Pineapple</h3>
+              <p class="products-type">Dark chocolate</p>
               <p class="products-price">54 UAH</p>
             </li>
             <li class="products-item">
@@ -364,8 +364,8 @@
                 width="230"
                 height="201"
               />
-              <h3 class="products-subtitle">Classic</h3>
-              <p class="products-descr">Milk chocolate</p>
+              <h3 class="products-name">Classic</h3>
+              <p class="products-type">Milk chocolate</p>
               <p class="products-price">45 UAH</p>
             </li>
             <li class="products-item">
@@ -376,8 +376,8 @@
                 width="230"
                 height="201"
               />
-              <h3 class="products-subtitle">Honey</h3>
-              <p class="products-descr">Milk chocolate</p>
+              <h3 class="products-name">Honey</h3>
+              <p class="products-type">Milk chocolate</p>
               <p class="products-price">50 UAH</p>
             </li>
             <li class="products-item">
@@ -388,8 +388,8 @@
                 width="230"
                 height="201"
               />
-              <h3 class="products-subtitle">Roasted Fruits</h3>
-              <p class="products-descr">Dark chocolate</p>
+              <h3 class="products-name">Roasted Fruits</h3>
+              <p class="products-type">Dark chocolate</p>
               <p class="products-price">66 UAH</p>
             </li>
             <li class="products-item">
@@ -400,8 +400,8 @@
                 width="230"
                 height="201"
               />
-              <h3 class="products-subtitle">Classic</h3>
-              <p class="products-descr">White chocolate</p>
+              <h3 class="products-name">Classic</h3>
+              <p class="products-type">White chocolate</p>
               <p class="products-price">54 UAH</p>
             </li>
           </ul>
@@ -453,19 +453,21 @@
       <!-- Reviews section -->
 
       <section id="reviews" class="section review">
-        <div class="container">
+        <div class="container review-container">
           <h2 class="review-title">
             <span class="accent-text">Chocolate</span> is loved
           </h2>
           <ul class="review-list">
             <li class="review-item">
-              <img
-                class="review-ill"
-                src="./images/reviewers/img-1.png"
-                alt="Victoria Dobrzhanska"
-                width="80"
-                height="80"
-              />
+              <div class="reviev-avatar">
+                <img
+                  class="avatar-img"
+                  src="./images/reviewers/img-1.png"
+                  alt="Victoria Dobrzhanska"
+                  width="80"
+                  height="80"
+                />
+              </div>
               <h3 class="review-reviewers">Victoria Dobrzhanska</h3>
               <p class="review-text">
                 I love this chocolate bar. Perfect combination of light crispy
@@ -473,13 +475,15 @@
               </p>
             </li>
             <li class="review-item">
-              <img
-                class="review-ill"
-                src="./images/reviewers/img-2.png"
-                alt="Nazar Babenko"
-                width="80"
-                height="80"
-              />
+              <div class="reviev-avatar">
+                <img
+                  class="avatar-img"
+                  src="./images/reviewers/img-2.png"
+                  alt="Nazar Babenko"
+                  width="80"
+                  height="80"
+                />
+              </div>
               <h3 class="review-reviewers">Nazar Babenko</h3>
               <p class="review-text">
                 This chocolate confection is a delight! A delight! The wafer is
@@ -488,13 +492,15 @@
               </p>
             </li>
             <li class="review-item">
-              <img
-                class="review-ill"
-                src="./images/reviewers/img-3.png"
-                alt="Olena Kampusch"
-                width="80"
-                height="80"
-              />
+              <div class="reviev-avatar">
+                <img
+                  class="avatar-img"
+                  src="./images/reviewers/img-3.png"
+                  alt="Olena Kampusch"
+                  width="80"
+                  height="80"
+                />
+              </div>
               <h3 class="review-reviewers">Olena Kampusch</h3>
               <p class="review-text">
                 Chocolate is a family favourite treat. Love the delicious smooth
@@ -509,83 +515,92 @@
     </main>
 
     <footer class="footer" id="footer">
-      <p class="footer-descr">
-        <span class="accent-text">Chocolate</span> a delicious cure for a bad
-        day
-      </p>
-
-      <p class="footer-social-title">Social networks</p>
-      <ul class="social footer-social">
-        <li class="social-list">
-          <a
-            href="https://facebook.com"
-            aria-label="Link to facebook"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="social-link"
-            ><img
-              src="./images/icons/facebook.svg"
-              alt="facebook icon"
-              width="24"
-              height="24"
-              class="social-icon"
-          /></a>
-        </li>
-        <li class="social-list">
-          <a
-            href="https://instagram.com"
-            aria-label="Link to instagram"
-            target="_blank"
-            rel="noopener noreferrer"
-            ><img
-              src="./images/icons/instagram.svg"
-              alt="instagram icon"
-              width="24"
-              height="24"
-          /></a>
-        </li>
-        <li class="social-list">
-          <a
-            href="https://twitter.com"
-            aria-label="Link to twitter"
-            target="_blank"
-            rel="noopener noreferrer"
-            ><img
-              src="./images/icons/twitter.svg"
-              alt="twitter icon"
-              width="24"
-              height="24"
-          /></a>
-        </li>
-      </ul>
-
-      <address class="address">
-        <p class="address-title">Contact us</p>
-        <ul class="footer-address-list">
-          <li class="footer-address-item">
-            <a href="tel:+380684439426" class="address-link"
-              >+380 (68) 443-94-26</a
-            >
-          </li>
-          <li class="footer-address-item">
-            <a href="maito:simplychoc@gmail.com" class="address-link"
-              >simplychoc@gmail.com</a
-            >
-          </li>
-        </ul>
-      </address>
-
-      <ul class="footer-nav-list">
-        <li class="footer-nav-item">
-          <a href="#home" class="footer-nav-link">Home</a>
-        </li>
-        <li class="footer-nav-item">
-          <a href="#made" class="footer-nav-link">How it&#39;s made?</a>
-        </li>
-        <li class="footer-nav-item">
-          <a href="#reviews" class="footer-nav-link">Chocolate is loved</a>
-        </li>
-      </ul>
+      <div class="container footer-container">
+        <div class="footer-top">
+          <p class="footer-slogan">
+            <span class="accent-text">Chocolate</span> a delicious cure for a
+            bad day
+          </p>
+          <div class="footer-network">
+            <p class="footer-caption">Social networks</p>
+            <ul class="social footer-social">
+              <li class="social-item">
+                <a
+                  href="https://facebook.com"
+                  aria-label="Link to facebook"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="social-link"
+                  ><img
+                    src="./images/icons/facebook.svg"
+                    alt="facebook icon"
+                    width="24"
+                    height="24"
+                    class="social-icon"
+                /></a>
+              </li>
+              <li class="social-item">
+                <a
+                  href="https://instagram.com"
+                  aria-label="Link to instagram"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="social-link"
+                  ><img
+                    src="./images/icons/instagram.svg"
+                    alt="instagram icon"
+                    width="24"
+                    height="24"
+                    class="social-icon"
+                /></a>
+              </li>
+              <li class="social-item">
+                <a
+                  href="https://twitter.com"
+                  aria-label="Link to twitter"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="social-link"
+                  ><img
+                    src="./images/icons/twitter.svg"
+                    alt="twitter icon"
+                    width="24"
+                    height="24"
+                    class="social-icon"
+                /></a>
+              </li>
+            </ul>
+          </div>
+          <address class="address">
+            <p class="footer-caption">Contact us</p>
+            <ul class="footer-address-list">
+              <li class="footer-address-item">
+                <a href="tel:+380684439426" class="address-link"
+                  >+380 (68) 443-94-26</a
+                >
+              </li>
+              <li class="footer-address-item">
+                <a href="maito:simplychoc@gmail.com" class="address-link"
+                  >simplychoc@gmail.com</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="footer-bottom">
+          <ul class="footer-nav">
+            <li class="footer-nav-item">
+              <a href="#home" class="footer-nav-link">Home</a>
+            </li>
+            <li class="footer-nav-item">
+              <a href="#made" class="footer-nav-link">How it&#39;s made?</a>
+            </li>
+            <li class="footer-nav-item">
+              <a href="#reviews" class="footer-nav-link">Chocolate is loved</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </footer>
   </body>
 </html>

@@ -1,8 +1,24 @@
 .footer {
+  padding: 50px 0px;
   background-color: #1e1823;
 }
 
-.footer-descr {
+.footer-caption {
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 14px;
+}
+
+/* Footer Top */
+
+.footer-top {
+  display: flex;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 0px 0px 48px;
+}
+
+.footer-slogan {
+  max-width: 300px;
   font-weight: 500;
   font-size: 28px;
   line-height: 1.21;
@@ -10,10 +26,11 @@
   color: #fff;
 }
 
-.footer-social-title {
-  font-weight: 600;
-  text-align: center;
-  color: #fff;
+/* Social */
+
+.footer-network {
+  margin-left: auto;
+  margin-right: 90px;
 }
 
 .social {
@@ -26,18 +43,15 @@
 }
 
 .social-link {
+  background-color: #fff;
 }
 
 .social-icon {
 }
 
-.address {
-}
+/* Address */
 
-.address-title {
-  font-weight: 600;
-  text-align: center;
-  color: #fff;
+.address {
 }
 
 .footer-address-list {
@@ -50,13 +64,29 @@
   color: #fff;
 }
 
-.footer-nav-list {
+/* Footer Bottom */
+
+.footer-bottom {
+  padding-top: 24px;
+}
+
+.footer-nav {
+  display: flex;
+  align-items: center;
+  gap: 24px;
 }
 
 .footer-nav-item {
 }
 
 .footer-nav-link {
+  display: block;
+  padding: 11px 0;
   font-weight: 500;
   color: #fff;
+}
+
+.footer-nav-link:hover,
+.footer-nav-link:focus {
+  color: #fd9222;
 }
