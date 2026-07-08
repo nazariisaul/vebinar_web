@@ -6,10 +6,16 @@
 }
 
 .hero-wrapper {
-  background: rgba(17, 17, 17, 0.4);
   border-radius: 30px;
   padding: 380px 40px 40px;
   width: 1136px;
+  background: rgba(17, 17, 17, 0.4);
+  background-image:
+    linear-gradient(rgba(17, 17, 17, 0.4) 0%, rgba(17, 17, 17, 0.4) 100%),
+    url('../images/hero/hero-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .hero-title {
