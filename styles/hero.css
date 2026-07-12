@@ -42,11 +42,15 @@
   color: #fff;
   border: 1px solid transparent;
   background-color: transparent;
+  transition:
+    background-color 250ms ease-in-out,
+    color 250ms ease-in-out,
+    border-color 250ms ease-in-out;
 }
 
 .hero-btn.accent {
   display: inline-block;
-  background: #fd9222;
+  background-color: #fd9222;
 }
 
 .hero-btn.accent:hover,
@@ -74,6 +78,7 @@
   display: flex;
   align-items: center;
   gap: 14px;
+  transition: color 250ms ease-in-out;
 }
 
 .hero-link:hover,
@@ -81,5 +86,17 @@
   color: #fd9222;
 }
 
-.hero-link-item {
+.hero-link-decor {
+}
+
+.hero-link-icon {
+  fill: #fd9222;
+  background-color: #fff;
+  border-radius: 19px;
+}
+
+.hero-link-icon:hover,
+.hero-link-icon:focus {
+  fill: #fff;
+  background-color: #fd9222;
 }
