@@ -28,9 +28,13 @@
 .benefits-item {
   gap: 18px;
   width: 308px;
+  position: relative;
 }
 
 .benefits-item:not(:last-child)::after {
+  position: absolute;
+  right: -44px;
+  top: calc(50% - 124px / 2);
   content: '';
   display: block;
   width: 1px;
@@ -56,7 +60,7 @@
   align-items: center;
   justify-content: center;
   border: 1px solid rgba(255, 255, 255, 0.5);
-  border-radius: 365px;
+  border-radius: 50%;
   width: 62px;
   height: 62px;
   margin-bottom: 22px;

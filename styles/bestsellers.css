@@ -15,18 +15,54 @@
 
 .bestsellerers-list {
   display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  flex-direction: row;
   gap: 16px;
-  width: 1136px;
 }
 
 .bestsellerers-item {
+  width: 368px;
+  border-radius: 0 0 16px 16px;
+  transition: box-shadow 250ms ease-in-out;
+}
+
+.bestsellerers-item:hover {
+  box-shadow: 0 4px 10px 0 rgba(30, 24, 35, 0.2);
+}
+
+.bestsellers-wrapper {
+  position: relative;
 }
 
 .bestsellerers-ill {
   border-radius: 16px 16px 0 0;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(100%);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  padding: 40px;
+
+  color: #fafafa;
+  backdrop-filter: blur(16px);
+  background-image: linear-gradient(
+    161deg,
+    rgba(253, 253, 255, 0.1) 0%,
+    rgba(8, 2, 21, 0.1) 100%
+  );
+  border-radius: 16px 16px 0 0;
+
+  transition: transform 250ms ease-in-out;
+}
+
+.bestsellers-item:hover .overlay {
+  transform: translateY(0);
 }
 
 .bestsellerers-subtitle {

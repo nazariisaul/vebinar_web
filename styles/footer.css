@@ -45,11 +45,6 @@
 .social-link {
 }
 
-.footer-links {
-  fill: #fff;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-}
-
 .social-icon {
 }
 
@@ -88,6 +83,7 @@
   padding: 11px 0;
   font-weight: 500;
   color: #fff;
+  transition: color 250ms ease-in-out;
 }
 
 .footer-nav-link:hover,

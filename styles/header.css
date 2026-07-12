@@ -40,6 +40,7 @@
 }
 
 .header-nav-link {
+  position: relative;
   display: block;
   padding: 11px 0;
   font-weight: 500;
@@ -53,6 +54,9 @@
 }
 
 .header-nav-link.current::after {
+  position: absolute;
+  left: 0;
+  bottom: 0;
   content: '';
   display: block;
   width: 100%;
@@ -84,18 +88,29 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid rgba(17, 17, 17, 0.1);
+  border: 1px solid transparent;
   border-radius: 10px;
   transition:
-    fill 250ms ease-in-out,
-    border 250ms ease-in-out;
+    color 250ms ease-in-out,
+    border-color 250ms ease-in-out;
+}
+
+.header-social-list .social-link {
+  color: #111;
+  border-color: rgba(17, 17, 17, 0.1);
+}
+
+.footer-social .social-link {
+  color: #fff;
+  border-color: rgba(255, 255, 255, 0.1);
 }
 
 .social-link:hover,
 .social-link:focus {
-  fill: #fd9222;
-  border: 1px solid rgba(253, 146, 34, 0.1);
+  color: #fd9222;
+  border-color: rgba(253, 146, 34, 0.1);
 }
 
 .social-icon {
+  fill: currentColor;
 }
