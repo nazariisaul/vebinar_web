@@ -61,6 +61,12 @@
 
 .address-link {
   color: #fff;
+  transition: color 250ms ease-in-out;
+}
+
+.address-link:hover,
+.address-link:focus {
+  color: #fd9222;
 }
 
 /* Footer Bottom */
