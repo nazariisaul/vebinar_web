@@ -30,6 +30,7 @@
 
 .bestsellers-wrapper {
   position: relative;
+  overflow: hidden;
 }
 
 .bestsellerers-ill {
@@ -51,17 +52,17 @@
 
   color: #fafafa;
   backdrop-filter: blur(16px);
-  background-image: linear-gradient(
+  background: linear-gradient(
     161deg,
     rgba(253, 253, 255, 0.1) 0%,
     rgba(8, 2, 21, 0.1) 100%
   );
   border-radius: 16px 16px 0 0;
 
-  transition: transform 250ms ease-in-out;
+  transition: transform 300ms ease-in-out;
 }
 
-.bestsellers-item:hover .overlay {
+.bestsellerers-item:hover .overlay {
   transform: translateY(0);
 }
 
