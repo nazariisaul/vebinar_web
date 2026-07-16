@@ -44,7 +44,7 @@
   display: block;
   padding: 11px 0;
   font-weight: 500;
-  transition: color 250ms ease-in-out;
+  transition: color 300ms ease-in-out;
 }
 
 .header-nav-link.current,
@@ -91,8 +91,8 @@
   border: 1px solid transparent;
   border-radius: 10px;
   transition:
-    color 250ms ease-in-out,
-    border-color 250ms ease-in-out;
+    color 300ms ease-in-out,
+    border-color 300ms ease-in-out;
 }
 
 .header-social-list .social-link {

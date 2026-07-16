@@ -582,11 +582,16 @@
 
     <footer class="footer" id="footer">
       <div class="container footer-container">
+        <!--  -->
+
         <div class="footer-top">
           <p class="footer-slogan">
             <span class="accent-text">Chocolate</span> a delicious cure for a
             bad day
           </p>
+
+          <!--  -->
+
           <div class="footer-network">
             <p class="footer-caption">Social networks</p>
             <ul class="social footer-social">
@@ -602,6 +607,9 @@
                   </svg>
                 </a>
               </li>
+
+              <!--  -->
+
               <li class="social-item">
                 <a
                   href="https://instagram.com"
@@ -614,6 +622,9 @@
                   </svg>
                 </a>
               </li>
+
+              <!--  -->
+
               <li class="social-item">
                 <a
                   href="https://twitter.com"
@@ -628,6 +639,9 @@
               </li>
             </ul>
           </div>
+
+          <!--  -->
+
           <address class="address">
             <p class="footer-caption">Contact us</p>
             <ul class="footer-address-list">
@@ -636,6 +650,9 @@
                   >+380 (68) 443-94-26</a
                 >
               </li>
+
+              <!--  -->
+
               <li class="footer-address-item">
                 <a href="maito:simplychoc@gmail.com" class="address-link"
                   >simplychoc@gmail.com</a
@@ -644,20 +661,76 @@
             </ul>
           </address>
         </div>
+
+        <!--  -->
+
         <div class="footer-bottom">
-          <ul class="footer-nav">
-            <li class="footer-nav-item">
-              <a href="#home" class="footer-nav-link">Home</a>
-            </li>
-            <li class="footer-nav-item">
-              <a href="#made" class="footer-nav-link">How it&#39;s made?</a>
-            </li>
-            <li class="footer-nav-item">
-              <a href="#reviews" class="footer-nav-link">Chocolate is loved</a>
-            </li>
-          </ul>
+          <div class="footer-botton-menu">
+            <ul class="footer-nav">
+              <li class="footer-nav-item">
+                <a href="#home" class="footer-nav-link">Home</a>
+              </li>
+              <!--  -->
+              <li class="footer-nav-item">
+                <a href="#made" class="footer-nav-link">How it&#39;s made?</a>
+              </li>
+              <!--  -->
+              <li class="footer-nav-item">
+                <a href="#reviews" class="footer-nav-link"
+                  >Chocolate is loved</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <form class="footer-form">
+            <label class="footer-form-label">
+              <input
+                type="email"
+                name="user-email"
+                class="footer-form-input"
+                placeholder="Enter your email"
+              />
+            </label>
+            <button type="submit" class="footer-form-btn">Subscribe</button>
+          </form>
         </div>
       </div>
     </footer>
+
+    <!--  -->
+
+    <div class="modal-overlay">
+      <div class="modal">
+        <button type="button" class="modal-close-btn">
+          <svg width="16" height="16" class="modal-close-btn-svg">
+            <use href="./images/sprite.svg#close"></use>
+          </svg>
+        </button>
+        <p class="modal-caption">
+          LEAVE A REVIEW ABOUT <span class="accent-text">OUR CHOCOLATE</span>
+        </p>
+
+        <!--  -->
+
+        <form class="modal-form">
+          <fieldset class="modal-main-fildset">
+            <fieldset class="modal-text-fildsets">
+              <div>
+                <label for=""></label>
+                <div>
+                  <input type="text" />
+                  <svg width="16" height="16" class="modal-close-btn-svg">
+                    <use href="./images/sprite.svg#user"></use>
+                  </svg>
+                </div>
+              </div>
+            </fieldset>
+          </fieldset>
+
+          <button type="submit" class="modal-send-btn">Send</button>
+        </form>
+      </div>
+    </div>
   </body>
 </html>

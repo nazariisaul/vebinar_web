@@ -64,8 +64,8 @@
   padding: 14px 40px;
   width: 222px;
   transition:
-    color 250ms ease-in-out,
-    background-color 250ms ease-in-out;
+    color 300ms ease-in-out,
+    background-color 300ms ease-in-out;
 }
 
 .review-btn:hover,
