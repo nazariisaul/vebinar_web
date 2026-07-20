@@ -701,8 +701,8 @@
 
     <div class="backdrop is-open">
       <div class="modal">
-        <button type="button" class="modal-close-btn">
-          <svg width="28" height="28" class="modal-close-btn-svg">
+        <button type="button" class="modal-btn">
+          <svg width="28" height="28" class="modal-btn-svg">
             <use href="./images/sprite.svg#close"></use>
           </svg>
         </button>
@@ -713,119 +713,112 @@
         <!--  -->
 
         <form class="modal-form" name="reviewForm">
-          <fieldset class="modal-main-fildset">
-            <!-- Name -->
+          <!-- Name -->
 
-            <div class="modal-form-field">
-              <label for="userName" class="modal-form-label">Name</label>
-              <div class="modal-form-wrap">
-                <input
-                  type="text"
-                  name="userName"
-                  id="userName"
-                  class="modal-input"
-                  required
-                  autofocus
-                  minlength="2"
-                  pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
-                  title="Name must be two word separated by space in latin"
-                />
-                <svg width="24" height="24" class="modal-input-icon">
-                  <use href="./images/sprite.svg#user"></use>
-                </svg>
-              </div>
-            </div>
-
-            <!-- Email -->
-
-            <div class="modal-form-field">
-              <label for="userEmail" class="modal-form-label">Email</label>
-              <div class="modal-form-wrap">
-                <input
-                  type="email"
-                  name="userEmail"
-                  id="userEmail"
-                  class="modal-input"
-                  required
-                />
-                <svg width="24" height="24" class="modal-input-icon">
-                  <use href="./images/sprite.svg#email"></use>
-                </svg>
-
-                <svg class="modal-form-error" width="24" height="24">
-                  <use href="./images/sprite.svg#error"></use>
-                </svg>
-              </div>
-            </div>
-
-            <!-- Phone -->
-
-            <div class="modal-form-field">
-              <label for="userPhone" class="modal-form-label"
-                >Phone number</label
-              >
-              <div class="modal-form-wrap">
-                <input
-                  type="tel"
-                  name="userPhone"
-                  id="userPhone"
-                  class="modal-input"
-                  required
-                />
-                <svg width="24" height="24" class="modal-input-icon">
-                  <use href="./images/sprite.svg#phone"></use>
-                </svg>
-              </div>
-            </div>
-
-            <!-- Comment -->
-
-            <div class="modal-form-field">
-              <label for="userComment" class="modal-form-label">Comment</label>
-              <textarea
-                name="comment"
-                id="userComment"
-                placeholder="Enter text"
-                class="modal-form-comment"
-                rows="4"
-                required
-                minlength="20"
-                maxlength="1000"
-              ></textarea>
-            </div>
-
-            <!-- Checkbox Agreement -->
-
-            <div class="modal-form-agreement">
+          <div class="modal-form-field">
+            <label for="userName" class="modal-form-label">Name</label>
+            <div class="modal-form-wrap">
               <input
-                class="checkbox sr-only"
-                type="checkbox"
-                id="userAgreement"
-                name="userAgreement"
-                value="true"
-                checked
+                type="text"
+                name="userName"
+                id="userName"
+                class="modal-form-input"
+                required
+                autofocus
+                minlength="2"
+                pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
+                title="Name must be two word separated by space in latin"
               />
-              <label class="modal-form-agreement-wrapper" for="userAgreement">
-                <span class="modal-form-agreement-checkbox">
-                  <svg width="10" height="10" class="modal-form-agreement-icon">
-                    <use href="./images/sprite.svg#check-mark" />
-                  </svg>
-                </span>
-                <span class="modal-checkbox-text">
-                  I accept the terms and conditions of the
-                  <a
-                    class="modal-form-agreement-link"
-                    href="#"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    >Privacy Policy</a
-                  >
-                </span>
-              </label>
+              <svg width="24" height="24" class="modal-form-icon">
+                <use href="./images/sprite.svg#user"></use>
+              </svg>
             </div>
-          </fieldset>
+          </div>
 
-          <button type="submit" class="modal-send-btn">Send</button>
+          <!-- Email -->
+
+          <div class="modal-form-field">
+            <label for="userEmail" class="modal-form-label">Email</label>
+            <div class="modal-form-wrap">
+              <input
+                type="email"
+                name="userEmail"
+                id="userEmail"
+                class="modal-form-input"
+                required
+              />
+              <svg width="24" height="24" class="modal-form-icon">
+                <use href="./images/sprite.svg#email"></use>
+              </svg>
+
+              <svg class="modal-form-error" width="24" height="24">
+                <use href="./images/sprite.svg#error"></use>
+              </svg>
+            </div>
+          </div>
+
+          <!-- Phone -->
+
+          <div class="modal-form-field">
+            <label for="userPhone" class="modal-form-label">Phone number</label>
+            <div class="modal-form-wrap">
+              <input
+                type="tel"
+                name="userPhone"
+                id="userPhone"
+                class="modal-form-input"
+              />
+              <svg width="24" height="24" class="modal-form-icon">
+                <use href="./images/sprite.svg#phone"></use>
+              </svg>
+            </div>
+          </div>
+
+          <!-- Comment -->
+
+          <div class="modal-form-field">
+            <label for="userComment" class="modal-form-label">Comment</label>
+            <textarea
+              name="userComment"
+              id="userComment"
+              placeholder="Enter text"
+              class="modal-form-comment"
+              rows="4"
+              required
+              minlength="20"
+              maxlength="1000"
+            ></textarea>
+          </div>
+
+          <!-- Checkbox Agreement -->
+
+          <div class="modal-form-agreement">
+            <input
+              class="checkbox sr-only"
+              type="checkbox"
+              id="userAgreement"
+              name="userAgreement"
+              value="true"
+              checked
+            />
+            <label class="modal-form-agreement-wrapper" for="userAgreement">
+              <span class="modal-form-agreement-checkbox">
+                <svg width="10" height="10" class="modal-form-agreement-icon">
+                  <use href="./images/sprite.svg#check-mark" />
+                </svg>
+              </span>
+              I accept the terms and conditions of the
+              <a
+                class="modal-form-agreement-link"
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Privacy Policy</a
+              >
+            </label>
+          </div>
+
+          <button type="submit" class="modal-form-btn">Send</button>
         </form>
       </div>
     </div>
