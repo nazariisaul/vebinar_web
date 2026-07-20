@@ -575,7 +575,9 @@
               </p>
             </li>
           </ul>
-          <button type="button" class="review-btn">Leave a review</button>
+          <button type="button" class="review-btn" id="openModal">
+            Leave a review
+          </button>
         </div>
       </section>
     </main>
@@ -665,31 +667,28 @@
         <!--  -->
 
         <div class="footer-bottom">
-          <div class="footer-botton-menu">
-            <ul class="footer-nav">
-              <li class="footer-nav-item">
-                <a href="#home" class="footer-nav-link">Home</a>
-              </li>
-              <!--  -->
-              <li class="footer-nav-item">
-                <a href="#made" class="footer-nav-link">How it&#39;s made?</a>
-              </li>
-              <!--  -->
-              <li class="footer-nav-item">
-                <a href="#reviews" class="footer-nav-link"
-                  >Chocolate is loved</a
-                >
-              </li>
-            </ul>
-          </div>
+          <ul class="footer-nav">
+            <li class="footer-nav-item">
+              <a href="#home" class="footer-nav-link">Home</a>
+            </li>
+            <!--  -->
+            <li class="footer-nav-item">
+              <a href="#made" class="footer-nav-link">How it&#39;s made?</a>
+            </li>
+            <!--  -->
+            <li class="footer-nav-item">
+              <a href="#reviews" class="footer-nav-link">Chocolate is loved</a>
+            </li>
+          </ul>
 
-          <form class="footer-form">
+          <form class="footer-form" name="subscriptionForm">
             <label class="footer-form-label">
               <input
                 type="email"
-                name="user-email"
+                name="userSubscriptionEmail"
                 class="footer-form-input"
                 placeholder="Enter your email"
+                id="userSubscriptionEmail"
               />
             </label>
             <button type="submit" class="footer-form-btn">Subscribe</button>
@@ -700,10 +699,10 @@
 
     <!--  -->
 
-    <div class="modal-overlay">
+    <div class="backdrop is-open">
       <div class="modal">
         <button type="button" class="modal-close-btn">
-          <svg width="16" height="16" class="modal-close-btn-svg">
+          <svg width="28" height="28" class="modal-close-btn-svg">
             <use href="./images/sprite.svg#close"></use>
           </svg>
         </button>
@@ -713,19 +712,117 @@
 
         <!--  -->
 
-        <form class="modal-form">
+        <form class="modal-form" name="reviewForm">
           <fieldset class="modal-main-fildset">
-            <fieldset class="modal-text-fildsets">
-              <div>
-                <label for=""></label>
-                <div>
-                  <input type="text" />
-                  <svg width="16" height="16" class="modal-close-btn-svg">
-                    <use href="./images/sprite.svg#user"></use>
-                  </svg>
-                </div>
+            <!-- Name -->
+
+            <div class="modal-form-field">
+              <label for="userName" class="modal-form-label">Name</label>
+              <div class="modal-form-wrap">
+                <input
+                  type="text"
+                  name="userName"
+                  id="userName"
+                  class="modal-input"
+                  required
+                  autofocus
+                  minlength="2"
+                  pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
+                  title="Name must be two word separated by space in latin"
+                />
+                <svg width="24" height="24" class="modal-input-icon">
+                  <use href="./images/sprite.svg#user"></use>
+                </svg>
               </div>
-            </fieldset>
+            </div>
+
+            <!-- Email -->
+
+            <div class="modal-form-field">
+              <label for="userEmail" class="modal-form-label">Email</label>
+              <div class="modal-form-wrap">
+                <input
+                  type="email"
+                  name="userEmail"
+                  id="userEmail"
+                  class="modal-input"
+                  required
+                />
+                <svg width="24" height="24" class="modal-input-icon">
+                  <use href="./images/sprite.svg#email"></use>
+                </svg>
+
+                <svg class="modal-form-error" width="24" height="24">
+                  <use href="./images/sprite.svg#error"></use>
+                </svg>
+              </div>
+            </div>
+
+            <!-- Phone -->
+
+            <div class="modal-form-field">
+              <label for="userPhone" class="modal-form-label"
+                >Phone number</label
+              >
+              <div class="modal-form-wrap">
+                <input
+                  type="tel"
+                  name="userPhone"
+                  id="userPhone"
+                  class="modal-input"
+                  required
+                />
+                <svg width="24" height="24" class="modal-input-icon">
+                  <use href="./images/sprite.svg#phone"></use>
+                </svg>
+              </div>
+            </div>
+
+            <!-- Comment -->
+
+            <div class="modal-form-field">
+              <label for="userComment" class="modal-form-label">Comment</label>
+              <textarea
+                name="comment"
+                id="userComment"
+                placeholder="Enter text"
+                class="modal-form-comment"
+                rows="4"
+                required
+                minlength="20"
+                maxlength="1000"
+              ></textarea>
+            </div>
+
+            <!-- Checkbox Agreement -->
+
+            <div class="modal-form-agreement">
+              <input
+                class="checkbox sr-only"
+                type="checkbox"
+                id="userAgreement"
+                name="userAgreement"
+                value="true"
+                checked
+              />
+              <label class="modal-form-agreement-wrapper" for="userAgreement">
+                <span class="modal-form-agreement-checkbox">
+                  <svg width="10" height="10" class="modal-form-agreement-icon">
+                    <use href="./images/sprite.svg#check-mark" />
+                  </svg>
+                </span>
+                <span class="modal-checkbox-text">
+                  I accept the terms and conditions of the
+                  <a
+                    class="modal-form-agreement-link"
+                    href="#"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Privacy Policy</a
+                  >
+                </span>
+              </label>
+            </div>
           </fieldset>
 
           <button type="submit" class="modal-send-btn">Send</button>
