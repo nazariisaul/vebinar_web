@@ -1,8 +1,25 @@
+/*? Mobile screen */
 .container {
-  width: 1168px;
+  min-width: 320px;
+  max-width: 375px;
+  padding: 0px 20px;
   margin: 0 auto;
-  padding: 0 16px;
 
-  /* outline: 2px solid red;
-  outline-offset: -2px; */
+  outline: 2px solid red;
+  outline-offset: -2px;
+}
+
+/*? Tablet screen */
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding: 0px 32px;
+  }
+}
+/*? Dsktop screen */
+@media screen and (min-width: 1168px) {
+  .container {
+    max-width: 1168px;
+    padding: 0 16px;
+  }
 }

@@ -293,3 +293,9 @@
 .modal-form-input:user-invalid ~ .modal-form-error {
   opacity: 1;
 }
+
+@media only screen and (min-width: 768px) {
+}
+
+@media only screen and (min-width: 1158px) {
+}

@@ -1,18 +1,22 @@
 .hero {
-  padding-bottom: 80px;
+  padding-bottom: 40px;
 }
 
 .hero-container {
+  min-width: 375px;
 }
 
 .hero-wrapper {
   border-radius: 30px;
-  padding: 380px 40px 40px;
-  width: 1136px;
+  padding: 390px 20px 20px;
+  min-width: 335px;
   background: rgba(17, 17, 17, 0.4);
   background-image:
     linear-gradient(rgba(17, 17, 17, 0.4) 0%, rgba(17, 17, 17, 0.4) 100%),
-    url('../images/hero/hero-bg.jpg');
+    image-set(
+      url('../images/hero/hero-bg.jpg') 1x,
+      url('../images/hero/hero-bg@2x.png') 2x
+    );
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -21,7 +25,7 @@
 .hero-title {
   font-weight: 500;
   margin-bottom: 32px;
-  font-size: 28px;
+  font-size: 20px;
   line-height: 1.21;
   letter-spacing: -0.03em;
   color: #fff;
@@ -34,10 +38,10 @@
 }
 
 .hero-btn {
-  min-width: 144px;
-  min-height: 46px;
+  min-width: 120px;
+  min-height: 42px;
+  padding: 12px 28px;
   border-radius: 100px;
-  padding: 14px 40px;
   font-weight: 600;
   color: #fff;
   border: 1px solid transparent;
@@ -105,4 +109,27 @@
 .hero-link:hover .hero-link-icon,
 .hero-link:focus .hero-link-icon {
   fill: #fff;
+}
+
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 1168px) {
+  .hero {
+    padding-bottom: 80px;
+  }
+
+  .hero-wrapper {
+    padding: 380px 40px 40px;
+  }
+
+  .hero-title {
+    font-size: 28px;
+  }
+
+  .hero-btn {
+    min-width: 144px;
+    min-height: 46px;
+    padding: 14px 40px;
+  }
 }

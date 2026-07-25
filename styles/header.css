@@ -1,5 +1,5 @@
 .header {
-  padding: 24px 32px;
+  padding: 18px 0;
 }
 
 .header-container {
@@ -12,11 +12,9 @@
 .logo {
   display: flex;
   align-items: center;
-  gap: 4px;
+  gap: 2px;
   font-weight: 700;
-  font-size: 18px;
-  line-height: 1.11;
-  letter-spacing: -0.03em;
+  font-size: 14px;
   text-transform: uppercase;
 }
 
@@ -26,6 +24,7 @@
 /* Nav styles */
 
 .header-nav {
+  display: none;
   margin-left: auto;
   margin-right: 122px;
 }
@@ -33,10 +32,6 @@
 .header-nav-list {
   display: flex;
   align-items: center;
-  gap: 24px;
-}
-
-.header-nav-item {
 }
 
 .header-nav-link {
@@ -74,6 +69,7 @@
 }
 
 .header-social-list {
+  display: none;
 }
 
 .social-item {
@@ -113,4 +109,60 @@
 
 .social-icon {
   fill: currentColor;
+}
+
+.header-menu-btn {
+  margin-left: 0;
+  width: 28px;
+  height: 28px;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  color: #111;
+
+  transition: color 300ms ease-out;
+}
+
+.header-menu-btn:hover,
+.header-menu-btn:focus {
+  color: #fd9222;
+}
+
+.header-menu-icon {
+  stroke: currentColor;
+}
+
+@media only screen and (min-width: 768px) {
+  .header {
+    padding: 24px 32px;
+  }
+
+  .header-nav {
+    display: block;
+    margin-right: 20px;
+  }
+
+  .header-nav-list {
+    gap: 20px;
+  }
+
+  .header-social-list {
+    display: flex;
+  }
+
+  .header-menu-btn {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1168px) {
+  .logo {
+    font-size: 18px;
+    line-height: 1.11;
+    gap: 4px;
+  }
+
+  .header-nav-list {
+    gap: 24px;
+  }
 }
