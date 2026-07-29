@@ -1,81 +1,61 @@
-.review {
+.reviews {
   padding-bottom: 120px;
 }
-
-.review-container {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  gap: 90px;
+.reviews-title {
+  margin-bottom: 90px;
 }
-
-.review-title {
-  margin-bottom: 0;
-}
-
-.review-list {
+.reviews-list {
   display: flex;
-  justify-content: center;
   gap: 28px;
+  margin-bottom: 90px;
 }
-
-.review-item {
+.reviews-item {
   position: relative;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  border: 1px solid rgba(17, 17, 17, 0.1);
-  border-radius: 16px;
-  padding: 56px 24px 24px;
-  box-shadow: 0 4px 10px 0 rgba(17, 17, 17, 0.1);
-  background: #fff;
-  width: 360px;
-  height: 200px;
-}
+  width: calc((100% - 28px * 2) / 3);
+  padding: 56px 24px 24px 24px;
 
-.reviev-avatar {
+  border-radius: 16px;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  background-color: #fff;
+
+  box-shadow: 0 4px 10px 0 rgba(17, 17, 17, 0.1);
+}
+.reviews-avatar {
   position: absolute;
   top: -40px;
   left: calc(50% - 40px);
 
   margin: 0 auto 16px;
 }
-
-.review-reviewers {
+.reviews-author {
   margin-bottom: 24px;
   font-weight: 600;
   font-size: 18px;
   line-height: 1.33;
   text-align: center;
 }
-
-.review-text {
-  text-align: center;
+.reviews-message {
   color: rgba(17, 17, 17, 0.7);
 }
+.reviews-btn {
+  display: block;
+  padding: 14px 40px;
+  margin: 0 auto;
 
-.review-btn {
   font-weight: 600;
   font-size: 18px;
-  line-height: 1.33333;
-  border: 1px solid #fd9222;
+  line-height: 1.33;
   background-color: transparent;
+  border: 1px solid #fd9222;
   border-radius: 100px;
-  padding: 14px 40px;
-  width: 222px;
+
   transition:
-    color 300ms ease-in-out,
-    background-color 300ms ease-in-out;
+    color 300ms ease-out,
+    background-color 300ms ease-out;
 }
 
-.review-btn:hover,
-.review-btn:focus {
-  color: #fff;
+.reviews-btn:hover,
+.reviews-btn:focus {
   background-color: #fd9222;
-}
-
-@media only screen and (min-width: 768px) {
-}
-
-@media only screen and (min-width: 1158px) {
+  color: #fff;
 }

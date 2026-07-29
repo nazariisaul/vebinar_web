@@ -2,53 +2,44 @@
   position: fixed;
   top: 0;
   left: 0;
-
   width: 100%;
   height: 100%;
 
-  z-index: 999;
+  /* width: 100dvw;
+  height: 100dvh; */
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  background-color: rgb(17 17 17 / 40%);
 
-  background-color: rgba(46, 47, 66, 0.4);
+  transition: 300ms ease-in 200ms;
+  transition-property: opacity, visibility;
 
   opacity: 0;
-  pointer-events: none;
   visibility: hidden;
-
-  transition:
-    opacity 300ms ease-out 200ms,
-    visibiliti 300ms ease-out 200ms;
+  pointer-events: none;
 }
-
 .backdrop.is-open {
   opacity: 1;
-  pointer-events: initial;
   visibility: visible;
+  pointer-events: initial;
+
+  transition-delay: 0ms;
 }
-
-/* Modal container */
-
 .modal {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translateX(-50%) translateY(-70%);
+  opacity: 0;
 
-  border-radius: 15px;
-  padding: 40px;
-  max-width: 518px;
-  min-height: 796px;
-
-  transition: 150ms ease-out 0ms;
+  transition: 150ms ease-in 0ms;
   transition-property: transform, opacity;
 
-  box-shadow:
-    0 1px 1px 0 rgba(0, 0, 0, 0.14),
-    0 1px 3px 0 rgba(0, 0, 0, 0.12),
-    0 2px 1px 0 rgba(0, 0, 0, 0.2);
+  max-width: 518px;
+  width: 100%;
+  min-height: 796px;
+  padding: 40px;
+
+  border-radius: 15px;
   background-color: #fafafa;
 }
 
@@ -56,12 +47,13 @@
   transform: translateX(-50%) translateY(-50%);
   opacity: 1;
 
-  transition-delay: 0ms;
+  transition-delay: 350ms;
 }
 
-/* body:has(.backdrop.is-open) {
+/* ? Scroll blocking technique */
+body:has(.backdrop.is-open) {
   overflow-y: hidden;
-} */
+}
 
 .modal-btn {
   position: absolute;
@@ -69,61 +61,46 @@
   right: 24px;
   padding: 0;
 
-  border: none;
-  background-color: transparent;
-  color: #111;
-
   display: flex;
   align-items: center;
   justify-content: center;
 
-  transition: stroke 300ms ease-out;
-}
+  color: #111;
 
+  border: none;
+  background-color: transparent;
+  transition: color 300ms ease-out;
+}
 .modal-btn:hover,
 .modal-btn:focus {
   color: #fd9222;
 }
-
-.modal-btn-svg {
+.modal-btn-icon {
   stroke: currentColor;
 }
-
 .modal-caption {
   max-width: 300px;
-
+  margin-bottom: 40px;
   font-weight: 600;
   font-size: 24px;
   line-height: 1.17;
   letter-spacing: -0.03em;
   text-transform: uppercase;
-
-  color: #111;
-
-  margin-bottom: 40px;
 }
-
-/* Form */
-
 .modal-form {
 }
-
 .modal-form-field {
   margin-bottom: 18px;
 }
-
-/*  */
-
-.modal-form-label {
-  display: block;
-  color: rgba(17, 17, 17, 0.7);
-  margin-bottom: 8px;
-}
-
-.modal-form-wrap {
+.modal-form-wrapper {
   position: relative;
 }
+.modal-form-label {
+  display: block;
+  margin-bottom: 8px;
 
+  color: rgba(17, 17, 17, 0.7);
+}
 .modal-form-input {
   width: 100%;
   height: 68px;
@@ -134,31 +111,26 @@
   letter-spacing: -0.02em;
   color: #404040;
 
+  outline: none;
   border: 1px solid rgba(17, 17, 17, 0.1);
   border-radius: 12px;
 
-  outline: none;
-  background-color: transparent;
-
-  transition: border-color 300ms ease-out;
+  transition: 300ms ease-out;
+  transition-property: border-color;
 }
 
-.modal-form-input:focus,
-.modal-form-input:focus-within {
+.modal-form-input:focus {
   border-color: #fd9222;
 }
-
 .modal-form-icon {
   position: absolute;
   top: 50%;
   left: 24px;
   transform: translateY(-50%);
-
   stroke: #404040;
 
-  pointer-events: none;
-
-  transition: stroke 300ms ease-out;
+  transition: 300ms ease-out;
+  transition-property: stroke;
 }
 
 .modal-form-input:focus + .modal-form-icon {
@@ -168,68 +140,57 @@
 .modal-form-comment {
   width: 100%;
   height: 138px;
-
-  border: 1px solid rgba(17, 17, 17, 0.1);
-  border-radius: 12px;
   padding: 22px 24px;
 
   font-size: 18px;
   line-height: 1.33;
-  color: #404040;
 
-  resize: none;
   outline: none;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 12px;
+  resize: none;
 
-  transition: border-color 300ms ease-out;
+  transition: 300ms ease-out;
+  transition-property: border-color;
 }
-
+.modal-form-comment:focus {
+  border-color: #fd9222;
+}
 .modal-form-comment::placeholder {
   color: rgba(17, 17, 17, 0.4);
 }
 
-.modal-form-comment:hover,
-.modal-form-comment:focus {
-  border-color: #fd9222;
-}
-
-/*  */
-
 .modal-form-btn {
   min-width: 117px;
   min-height: 46px;
+  padding: 14px 40px;
 
   font-weight: 600;
+  line-height: 1.29;
   color: #fff;
 
   border: none;
+  border-radius: 100px;
   background-color: #fd9222;
 
-  border-radius: 100px;
-  padding: 14px 40px;
-  transition:
-    background-color 300ms ease-out,
-    color 300ms ease-out;
+  transition: 300ms ease-out;
+  transition-property: background-color;
 }
 
 .modal-form-btn:hover,
 .modal-form-btn:focus {
-  color: #fd9222;
   background-color: rgba(253, 146, 34, 0.1);
 }
 
-/* Custom Checkbox */
-
+/*? Custom Checkbox */
 .modal-form-agreement {
   margin-bottom: 40px;
 }
-
 .checkbox {
 }
-
 .modal-form-agreement-wrapper {
   color: rgba(17, 17, 17, 0.7);
 }
-
 .modal-form-agreement-checkbox {
   display: inline-flex;
   align-items: center;
@@ -241,15 +202,12 @@
 
   color: transparent;
 
-  cursor: pointer;
-
   border-radius: 6px;
   border: 1px solid rgba(17, 17, 17, 0.14);
+  cursor: pointer;
 
-  transition:
-    background-color 300ms ease-out,
-    border-color 300ms ease-out,
-    color 300ms ease-out;
+  transition: 300ms ease-out;
+  transition-property: background-color, border-color, color;
 }
 
 .checkbox:checked
@@ -263,17 +221,14 @@
 .modal-form-agreement-icon {
   fill: currentColor;
 }
-
 .modal-form-agreement-link {
   color: #fd9222;
 }
 
-/* Form Validation */
-
+/*? Form Validation */
 .modal-form-input:user-invalid {
   border-color: #e74a3b;
 }
-
 .modal-form-input:user-invalid + .modal-form-icon {
   stroke: #e74a3b;
 }
@@ -283,19 +238,10 @@
   top: 50%;
   right: 24px;
   transform: translateY(-50%);
-  color: #e74a3b;
 
   opacity: 0;
-
-  transition: opacity 300ms ease-out;
+  transition: 300ms ease-out;
 }
-
 .modal-form-input:user-invalid ~ .modal-form-error {
   opacity: 1;
-}
-
-@media only screen and (min-width: 768px) {
-}
-
-@media only screen and (min-width: 1158px) {
 }
