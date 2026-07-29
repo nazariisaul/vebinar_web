@@ -1,24 +1,35 @@
 .made {
 }
-.made-title {
+
+.made-container {
 }
+
 .made-wrapper {
   display: flex;
+  align-items: center;
+  justify-content: center;
   gap: 20px;
 }
+
 .made-left-side {
-  width: 600px;
-  overflow: hidden;
   border-radius: 16px;
+  overflow: hidden;
+  width: 600px;
 }
-.made-pic {
-}
+
 .made-right-side {
+  border-radius: 15px;
   padding: 32px;
   width: 516px;
   background-color: #fff;
-  border-radius: 15px;
 }
+
+.made-title {
+}
+
+.made-ill {
+}
+
 .made-subtitle {
   max-width: 350px;
   margin-bottom: 28px;
@@ -26,15 +37,18 @@
   font-size: 18px;
   line-height: 1.33;
 }
+
 .made-list {
   display: flex;
   flex-direction: column;
   gap: 24px;
 }
+
 .made-item {
   display: flex;
   gap: 8px;
 }
+
 .made-item::before {
   content: '';
   flex-shrink: 0;
@@ -46,4 +60,10 @@
   background-color: #4c4c4c;
   border: 1px solid #eceded;
   border-radius: 50%;
+}
+
+@media only screen and (min-width: 768px) {
+}
+
+@media only screen and (min-width: 1158px) {
 }

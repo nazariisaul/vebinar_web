@@ -1,9 +1,8 @@
-/*? Global Styles */
+/* Global styles */
 body {
   font-family: 'Montserrat', sans-serif;
-  background-color: #fafafa;
   color: #111111;
-
+  background-color: #fafafa;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.29;
@@ -13,6 +12,13 @@ body {
 a {
   text-decoration: none;
   color: inherit;
+}
+
+ul,
+ol {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 h1,
@@ -25,13 +31,6 @@ p {
   margin: 0;
 }
 
-ul,
-ol {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
 address {
   font-style: normal;
 }
@@ -40,64 +39,35 @@ button {
   font-family: inherit;
   cursor: pointer;
 }
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
 
-/* Common styles */
 .ingredients,
 .made,
 .products,
-.bestsellers,
-.reviews {
-  padding: 40px 0;
+.bestsellerers,
+.review {
+  padding: 60px 0;
 }
-.made-title,
-.ingredients-title,
-.products-title,
-.bestsellers-title,
-.reviews-title {
-  max-width: 412px;
-  margin: 0 auto 32px;
 
+.ingredients-title,
+.made-title,
+.products-title,
+.bestsellerers-title,
+.review-title {
+  max-width: 412px;
+  margin: 0 auto 50px;
   font-weight: 600;
-  font-size: 20px;
-  line-height: 1.2;
+  font-size: 24px;
+  line-height: 1.17;
   letter-spacing: -0.03em;
   text-transform: uppercase;
   text-align: center;
 }
-
-@media only screen and (min-width: 768px) {
-  .ingredients,
-  .made,
-  .products,
-  .bestsellers,
-  .reviews {
-    padding: 50px 0;
-  }
-
-  .made-title,
-  .ingredients-title,
-  .products-title,
-  .bestsellers-title,
-  .reviews-title {
-    margin: 0 auto 50px;
-    font-size: 24px;
-    line-height: 1.17;
-  }
-}
-@media only screen and (min-width: 1168px) {
-  .ingredients,
-  .made,
-  .products,
-  .bestsellers,
-  .reviews {
-    padding: 60px 0;
-  }
-}
 .accent-text {
   color: #fd9222;
+}
+
+@media only screen and (min-width: 768px) {
+}
+
+@media only screen and (min-width: 1158px) {
 }

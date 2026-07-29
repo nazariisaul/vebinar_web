@@ -1,78 +1,58 @@
 .header {
-  padding: 18px 0px;
+  padding: 18px 0;
 }
 
-@media only screen and (min-width: 768px) {
-  .header {
-    padding: 20px 0px;
-  }
-}
-
-@media only screen and (min-width: 1168px) {
-  .header {
-    padding: 24px 0px;
-  }
-}
-
-.header > .container {
+.header-container {
   display: flex;
   align-items: center;
 }
-/* @media only screen and (max-width: 767.98px) {
-  .header > .container {
-    justify-content: space-between;
-  }
-} */
 
-@media only screen and (max-width: 767.98px) {
-  .header-nav {
-    display: none;
-  }
-}
-@media only screen and (min-width: 768px) {
-  .header-nav {
-    margin-left: auto;
-    margin-right: 20px;
-  }
-}
-@media only screen and (min-width: 1168px) {
-  .header-nav {
-    margin-right: 122px;
-  }
+/* Logo styles */
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
 }
 
-@media only screen and (min-width: 768px) {
-  .header-nav-list {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-  }
+.logo-icon {
 }
-@media only screen and (min-width: 1168px) {
-  .header-nav-list {
-    gap: 24px;
-  }
+
+/* Nav styles */
+
+.header-nav {
+  display: none;
+  margin-left: auto;
+  margin-right: 122px;
 }
+
+.header-nav-list {
+  display: flex;
+  align-items: center;
+}
+
 .header-nav-link {
+  position: relative;
   display: block;
   padding: 11px 0;
   font-weight: 500;
-  transition: color 300ms ease-out;
+  transition: color 300ms ease-in-out;
 }
+
 .header-nav-link.current,
 .header-nav-link:hover,
 .header-nav-link:focus {
   color: #fd9222;
 }
-.header-nav-link.current {
-  position: relative;
-}
-.header-nav-link.current::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
 
+.header-nav-link.current::after {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  content: '';
   display: block;
   width: 100%;
   height: 4px;
@@ -81,95 +61,108 @@
   background-color: #fd9222;
 }
 
-/* Logo styles */
-.logo {
-  display: flex;
-  align-items: center;
-  gap: 2px;
+/* Social links styles */
 
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.29;
-  letter-spacing: -0.03em;
-  text-transform: uppercase;
-}
-@media only screen and (min-width: 1168px) {
-  .logo {
-    gap: 4px;
-
-    font-size: 18px;
-    line-height: 1.11;
-  }
-}
-
-/* Socials styles */
-.socials {
+.social {
   display: flex;
   gap: 14px;
 }
-.socials-item {
+
+.header-social-list {
+  display: none;
+}
+
+.social-item {
   width: 40px;
   height: 40px;
 }
-.socials-link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+
+.social-link {
   width: 100%;
   height: 100%;
   padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border: 1px solid transparent;
   border-radius: 10px;
-
-  transition: color 300ms ease-out;
+  transition:
+    color 300ms ease-in-out,
+    border-color 300ms ease-in-out;
 }
-.header-socials .socials-link {
-  color: #111111;
+
+.header-social-list .social-link {
+  color: #111;
   border-color: rgba(17, 17, 17, 0.1);
 }
-.footer-socials .socials-link,
-.socials-light .socials-link {
-  color: #ffffff;
+
+.footer-social .social-link {
+  color: #fff;
   border-color: rgba(255, 255, 255, 0.1);
 }
-.socials-link:hover,
-.socials-link:focus {
+
+.social-link:hover,
+.social-link:focus {
   color: #fd9222;
   border-color: rgba(253, 146, 34, 0.1);
 }
 
-.socials-icon {
+.social-icon {
   fill: currentColor;
 }
 
-@media only screen and (max-width: 767.98px) {
-  .header-socials {
-    display: none;
-  }
+.header-menu-btn {
+  margin-left: 0;
+  width: 28px;
+  height: 28px;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  color: #111;
+
+  transition: color 300ms ease-out;
 }
 
-/* Menu btn */
-.menu-btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.header-menu-btn:hover,
+.header-menu-btn:focus {
+  color: #fd9222;
+}
 
-  margin-left: auto;
-  padding: 0;
-  color: #111111;
-  border: none;
-  background-color: transparent;
+.header-menu-icon {
+  stroke: currentColor;
 }
 
 @media only screen and (min-width: 768px) {
-  .menu-btn {
+  .header {
+    padding: 24px 32px;
+  }
+
+  .header-nav {
+    display: block;
+    margin-right: 20px;
+  }
+
+  .header-nav-list {
+    gap: 20px;
+  }
+
+  .header-social-list {
+    display: flex;
+  }
+
+  .header-menu-btn {
     display: none;
   }
 }
-.menu-btn:hover,
-.menu-btn:focus {
-  color: #fd9222;
-}
-.menu-btn-icon {
-  stroke: currentColor;
+
+@media only screen and (min-width: 1168px) {
+  .logo {
+    font-size: 18px;
+    line-height: 1.11;
+    gap: 4px;
+  }
+
+  .header-nav-list {
+    gap: 24px;
+  }
 }
