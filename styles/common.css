@@ -40,12 +40,29 @@ button {
   cursor: pointer;
 }
 
+img {
+  display: block;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .ingredients,
 .made,
 .products,
 .bestsellerers,
 .review {
-  padding: 60px 0;
+  padding: 40px 0;
 }
 
 .ingredients-title,
@@ -54,10 +71,11 @@ button {
 .bestsellerers-title,
 .review-title {
   max-width: 412px;
-  margin: 0 auto 50px;
+  margin: 0 auto 32px;
+
   font-weight: 600;
-  font-size: 24px;
-  line-height: 1.17;
+  font-size: 20px;
+  line-height: 1.2;
   letter-spacing: -0.03em;
   text-transform: uppercase;
   text-align: center;
@@ -67,7 +85,31 @@ button {
 }
 
 @media only screen and (min-width: 768px) {
+  .ingredients,
+  .made,
+  .products,
+  .bestsellerers,
+  .review {
+    padding: 50px 0;
+  }
+
+  .ingredients-title,
+  .made-title,
+  .products-title,
+  .bestsellerers-title,
+  .review-title {
+    margin: 0 auto 50px;
+    font-size: 24px;
+    line-height: 1.17;
+  }
 }
 
 @media only screen and (min-width: 1158px) {
+  .ingredients,
+  .made,
+  .products,
+  .bestsellerers,
+  .review {
+    padding: 60px 0;
+  }
 }
